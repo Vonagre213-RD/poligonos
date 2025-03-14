@@ -1,0 +1,154 @@
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(45deg, var(--accent-secondary) 20%, var(--accent-four), var(--accent-tertiary));
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.categoriesContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 20%;
+    max-height: auto;
+    border: 2px solid var(--accent-primary);
+    border-radius: 12px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.categoriesContainer h1 {
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+    margin-bottom: 8px;
+}
+
+.categoriesContainer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.categoryScrollBarItem {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.categoryScrollBarItem:hover {
+    background-color: var(--accent-secondary);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.categoryScrollBarItem.active {
+    background-color: var(--accent-primary);
+    color: #fff;
+}
+
+#FiguresSectionContainer {
+    width: 80%;
+}
+
+#FigureContent {
+    gap: 15px;
+    width: 70%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 95%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.FigureContent h2 {
+    font-size: 1.8rem;
+    color: var(--accent-primary);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.FigureContent h3 {
+    font-size: 1.5rem;
+    color: var(--accent-secondary);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.FigureContent h4 {
+    font-size: 1.3rem;
+    color: var(--accent-tertiary);
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.FigureContent ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.FigureContent li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.FigureContent img {
+    width: 1rem;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #mainContainer {
+        flex-direction: column;
+    }
+    .categoriesContainer {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #FiguresSectionContainer {
+        width: 100%;
+    }
+    #FigureContent {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .categoriesContainer h1 {
+        font-size: 1.2rem;
+    }
+    .categoryScrollBarItem {
+        padding: 8px;
+    }
+    .FigureContent h2 {
+        font-size: 1.5rem;
+    }
+    .FigureContent h3 {
+        font-size: 1.3rem;
+    }
+    .FigureContent h4 {
+        font-size: 1.1rem;
+    }
+    .FigureContent li {
+        font-size: 0.9rem;
+    }
+}

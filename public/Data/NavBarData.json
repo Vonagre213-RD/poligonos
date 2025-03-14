@@ -1,0 +1,6 @@
+{
+  "navLinks": [
+    { "path": "/", "name": "Historia" },
+    { "path": "/Poligonos", "name": "Poligonos" }
+  ]
+}

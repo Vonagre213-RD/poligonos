@@ -1,0 +1,33 @@
+.sliderDisplay {
+    display: flex;
+}
+
+.sliderNavButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background: #fff;
+    border-radius: 50%;
+    font-family: "Poppins", sans-serif;
+}
+
+.sliderButton:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .sliderNavButton {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sliderNavButton {
+        height: 2rem;
+        width: 2rem;
+    }
+}

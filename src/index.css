@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'ZZZFont';
+  src: url(./Fonts/es-es.ttf) format(truetype);
+}
+
+@font-face {
+  font-family:'sourceSerif' ;
+  src: url(./Fonts/SourceSerif4_36pt-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Fonts/Poppins-Regular.ttf');
+}
+
+/*modificaciones globales*/
+ *{
+  margin: 0;
+  padding: 0;
+}
+
+
+:Link{
+  text-decoration: none;
+}
+
+:root {
+  /* Colores principales */
+  --header-color: hsl(160, 0%, 0%);
+  --body-color: hsl(220, 20%, 14%);
+
+
+  /*Tipografia personalizada*/
+  --ZZZFont:'ZZZFont';
+  --sourceSerif:'sourceSerif'
+
+  /* Colores Tipografía */
+  --defaultText-color:#000;
+  --disabledText-color: hsl(0, 0%, 47%);
+
+  /* Colores de acento */
+  --accent-primary: #fff;
+  --accent-secondary: hsl(219, 76%, 64%);
+  --accent-tertiary: hsl(200, 92%, 63%);
+  --accent-four: hsl(311, 63%, 70%);
+  --accent-five: hsl(311, 70%, 40%);
+  --accent-six: hsl(200, 70%, 38%);
+  
+  --neutralColorX1: hsl(160, 0%, 7%); 
+  --neutralColorX2: hsl(0, 0%, 95%); 
+  --neutralColorX3: hsl(0, 0%, 85%); 
+  --neutralColorX4: #E7E8EE;
+  --neutralColorX5: hsl(0, 0%, 65%);
+  --neutralColorX6:hsl(160, 0%, 3%);
+  --neutralColorX7: hsl(0, 0%, 95%);
+
+
+  /* Colores neutrales */
+  --neutral-dark: hsl(160, 0%, 3%);
+  --neutral-dark-light: hsl(160, 0%, 20%);
+  --neutral-medium: hsl(0, 0%, 65%);
+  --neutral-light: hsl(0, 0%, 95%);
+
+  /* Tamaños tipográficos */
+  --font-size-small: 0.65rem;
+  --font-size-medium-Small: 0.70rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.25rem;
+
+  /* Espaciados */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+
+  /* Otros */
+  --border-radius: 4px;
+  --transition-time: 0.3s;
+}

@@ -1,0 +1,168 @@
+/* Home.module.css */
+
+#sliderContainer {
+  transform: translate(0rem, 1rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, var(--accent-secondary) 20%, var(--accent-four), var(--accent-tertiary));
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.mainContainer h2 {
+  text-align: center;
+  font-size: 2.9rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1.5rem;
+}
+
+
+.contentBlock {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contentBlock:hover {
+  transform: scale(1.02);
+}
+
+
+.contentBlock p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+
+/*============================
+      SECCIÓN: Historia
+  ============================*/
+
+
+.historyWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+.historyWrapper h2 {
+  font-size: 1.8rem;
+  color: var(--neutrarColorX1);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.historyWrapper h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+  color: var(--accent-five);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.historyWrapper h4 {
+  font-size: 1.3rem;
+  color: var(--accent-six);
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+
+.historyWrapper ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.historyWrapper li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.historyWrapper img {
+  width: 1rem;
+  height: auto;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .mainContainer {
+      padding: 2rem 0;
+  }
+  
+  .mainContainer h2 {
+      font-size: 2.9rem;
+      margin-top: 1.5rem;
+  }
+  
+  .contentBlock {
+      margin-top: 1.5rem;
+      width: 80%;
+      padding: 1.5rem;
+  }
+
+  #sliderContainer {
+      transform: translate(0rem, 1rem);
+      flex-direction: row;
+  }
+
+  .historyWrapper h2 {
+      font-size: 1.8rem;
+  }
+  
+  .historyWrapper h3 {
+      font-size: 1.5rem;
+  }
+  
+  .historyWrapper h4 {
+      font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentBlock {
+      max-width: 1200px;
+  }
+  
+  .historyWrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentBlock p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+  }
+  
+  .historyWrapper li {
+      font-size: 0.9rem;
+      line-height: 1.4;
+  }
+  
+  .mainContainer h2 {
+      font-size: 1.8rem;
+  }
+}
